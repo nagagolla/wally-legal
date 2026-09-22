@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Terms and privacy policy for Wally Personal Assistant Messaging." />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,650&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <title>Terms and Conditions</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f6f8;
+      --paper: #ffffff;
+      --text: #17202a;
+      --muted: #56616d;
+      --soft: #e8edf1;
+      --line: #d6dde3;
+      --accent: #9a5a16;
+      --accent-soft: #fff2de;
+      --accent-ink: #6d3b08;
+      --shadow: 0 18px 45px rgba(27, 38, 49, .08);
+      --serif: "Newsreader", Georgia, serif;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10151a;
+        --paper: #171d23;
+        --text: #edf1f4;
+        --muted: #aeb8c1;
+        --soft: #222a31;
+        --line: #313b44;
+        --accent: #e2a557;
+        --accent-soft: #342718;
+        --accent-ink: #ffd49a;
+        --shadow: 0 20px 50px rgba(0, 0, 0, .28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .page {
+      width: min(1160px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 28px;
+      padding: 8px 8px 32px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1, h2, h3 { font-family: var(--serif); }
+    h1 {
+      max-width: 720px;
+      margin: 0 0 12px;
+      font-size: clamp(2.55rem, 5.6vw, 4.7rem);
+      line-height: .98;
+      letter-spacing: -.035em;
+      font-weight: 650;
+    }
+    .lede {
+      max-width: 710px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.55;
+    }
+    .date {
+      margin: 0 0 4px;
+      color: var(--muted);
+      font-size: .92rem;
+      white-space: nowrap;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 760px);
+      justify-content: space-between;
+      gap: 64px;
+      margin-top: 38px;
+    }
+    .rail {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+    }
+    .rail-label {
+      margin: 0 0 11px;
+      color: var(--muted);
+      font-size: .79rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .rail nav { display: grid; gap: 4px; }
+    .rail a {
+      display: block;
+      padding: 8px 10px;
+      border-left: 2px solid transparent;
+      color: var(--muted);
+      font-size: .96rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .rail a:hover, .rail a[aria-current="true"] {
+      border-left-color: var(--accent);
+      color: var(--text);
+    }
+
+    .document {
+      min-width: 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: clamp(28px, 5vw, 64px);
+    }
+    .notice {
+      margin: 0 0 44px;
+      padding: 20px 22px;
+      background: var(--accent-soft);
+      color: var(--accent-ink);
+    }
+    .notice strong { font-weight: 700; }
+    .notice p { margin: 0; }
+    .notice p + p { margin-top: 8px; }
+    section + section {
+      margin-top: 58px;
+      padding-top: 52px;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.85rem, 3.4vw, 2.65rem);
+      line-height: 1.1;
+      letter-spacing: -.018em;
+      font-weight: 650;
+    }
+    .section-intro {
+      margin: 0 0 32px;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+    h3 {
+      margin: 32px 0 8px;
+      font-size: 1.34rem;
+      line-height: 1.3;
+      font-weight: 650;
+    }
+    p { margin: 0 0 16px; }
+    ul { margin: 10px 0 18px; padding-left: 1.25rem; }
+    li { padding-left: .28rem; }
+    li + li { margin-top: 8px; }
+    .keyword {
+      display: inline-block;
+      min-width: 3.9rem;
+      padding: .05rem .35rem;
+      border: 1px solid var(--line);
+      background: var(--soft);
+      color: var(--text);
+      font-size: .86em;
+      font-weight: 700;
+      letter-spacing: .03em;
+      text-align: center;
+    }
+    .contact {
+      margin-top: 34px;
+      padding: 25px 0 0;
+      border-top: 1px solid var(--line);
+    }
+    .contact h3 { margin-top: 0; }
+    footer {
+      max-width: 760px;
+      margin: 24px 0 0 auto;
+      color: var(--muted);
+      font-size: .88rem;
+      text-align: right;
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        width: min(100% - 28px, 720px);
+        padding-top: 28px;
+      }
+      .intro {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 4px 2px 24px;
+      }
+      .date { white-space: normal; }
+      .layout { display: block; margin-top: 20px; }
+      .rail {
+        position: static;
+        margin-bottom: 16px;
+        padding: 8px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+      }
+      .rail-label { display: none; }
+      .rail nav { grid-template-columns: 1fr 1fr; gap: 6px; }
+      .rail a {
+        border: 0;
+        padding: 8px 10px;
+        text-align: center;
+      }
+      .rail a:hover, .rail a[aria-current="true"] {
+        border: 0;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+      }
+      .document { padding: 28px 22px 36px; }
+      .notice { margin-bottom: 34px; padding: 17px 18px; }
+      section + section { margin-top: 44px; padding-top: 40px; }
+      footer { text-align: left; }
+    }
+
+    @media (max-width: 380px) {
+      body { font-size: 16px; }
+      .page { width: min(100% - 20px, 720px); }
+      .document { padding-inline: 17px; }
+      .rail a { font-size: .9rem; }
+    }
+
+    @media print {
+      :root { --bg: #fff; --paper: #fff; --text: #000; --muted: #444; --line: #bbb; }
+      .page { width: 100%; padding: 0; }
+      .intro { padding-inline: 0; }
+      .layout { display: block; }
+      .rail { display: none; }
+      .document { border: 0; box-shadow: none; padding: 28px 0 0; }
+      .notice { border: 1px solid #aaa; }
+      footer { max-width: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <div>
+        <h1>Messaging terms &amp; privacy</h1>
+        <p class="lede">These policies explain how Wally Personal Assistant Messaging, operated by Naga Golla, sends text messages, how consent works, and how mobile information is handled.</p>
+      </div>
+      <p class="date"><strong>Effective:</strong> September 22, 2026</p>
+    </header>
+
+    <div class="layout">
+      <aside class="rail" aria-label="Policy navigation">
+        <p class="rail-label">On this page</p>
+        <nav>
+          <a href="#terms" aria-current="true">Terms &amp; conditions</a>
+          <a href="#privacy">Privacy policy</a>
+        </nav>
+      </aside>
+
+      <article class="document">
+        <div class="notice" aria-label="Key messaging terms">
+          <p><strong>At a glance:</strong> Message frequency varies. Message and data rates may apply.</p>
+          <p>Reply <span class="keyword">STOP</span> to opt out or <span class="keyword">HELP</span> for help.</p>
+        </div>
+
+        <section id="terms" aria-labelledby="terms-heading">
+          <h2 id="terms-heading">Terms &amp; conditions</h2>
+          <p class="section-intro">By opting in to receive messages from Wally Personal Assistant Messaging, operated by Naga Golla, you agree to the terms below.</p>
+
+          <h3>1. Program description</h3>
+          <p>Wally Personal Assistant Messaging, operated by Naga Golla, is a personal-assistant text messaging program for a directly enrolled account holder. Messages may include appointment reminders, requested status updates, service notifications, and other account-related information. The program does not send third-party marketing messages.</p>
+
+          <h3>2. Consent and enrollment</h3>
+          <p>You may enroll by giving direct verbal or written consent to the service operator. By providing a mobile number and opting in, you confirm that you are the subscriber or customary user of that number and authorize informational text messages to it. Consent to receive text messages is not a condition of purchase.</p>
+
+          <h3>3. Message frequency and carrier charges</h3>
+          <p>Message frequency varies according to your requests, appointments, and account activity. Your mobile carrier’s standard message and data rates may apply.</p>
+
+          <h3>4. Opting out and getting help</h3>
+          <ul>
+            <li>Reply <span class="keyword">STOP</span> to any message to opt out. You may receive one final confirmation message.</li>
+            <li>Reply <span class="keyword">HELP</span> for help or email <a href="mailto:wally.dk24@gmail.com">wally.dk24@gmail.com</a>.</li>
+            <li>After opting out, you may opt in again only by making a new request to receive messages.</li>
+          </ul>
+
+          <h3>5. Delivery and availability</h3>
+          <p>Message delivery is subject to effective transmission by your mobile carrier and is not guaranteed. Carriers are not liable for delayed or undelivered messages. The program may be changed, suspended, or discontinued where reasonably necessary, including for legal, technical, or carrier requirements.</p>
+
+          <h3>6. Acceptable use</h3>
+          <p>You agree not to misuse the messaging program, attempt unauthorized access, interfere with its operation, or use it in violation of applicable law. Text messages should not be used for emergencies or other time-critical communications.</p>
+
+          <h3>7. Disclaimer and limitation</h3>
+          <p>The service is provided on an “as available” basis. To the extent permitted by law, Naga Golla is not responsible for indirect, incidental, or consequential losses arising from delayed, incomplete, or undelivered messages. Nothing in these terms limits rights that cannot legally be limited.</p>
+
+          <h3>8. Changes to these terms</h3>
+          <p>These terms may be updated to reflect changes to the program or legal requirements. The effective date above shows the latest revision. Continued participation after an update constitutes acceptance of the revised terms, where permitted by law.</p>
+        </section>
+
+        <section id="privacy" aria-labelledby="privacy-heading">
+          <h2 id="privacy-heading">Privacy policy</h2>
+          <p class="section-intro">This policy covers the mobile information used by Naga Golla to operate Wally Personal Assistant Messaging.</p>
+
+          <h3>1. Information covered</h3>
+          <p>This policy applies to the mobile number you provide and the consent you give to receive messages through the program.</p>
+
+          <h3>2. How information is used</h3>
+          <p>Your mobile number and consent are used to provide the personal-assistant messages you requested and to honor your messaging choices.</p>
+
+          <h3>3. Mobile information and sharing</h3>
+          <p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</strong> Text messaging originator opt-in data and consent will not be shared with any third parties, except service providers such as mobile carriers, messaging aggregators, and messaging-platform providers that are necessary to deliver and operate the text messaging service.</p>
+          <p>Mobile information is not sold, rented, or disclosed for third-party advertising.</p>
+
+          <h3>4. Your choices</h3>
+          <p>You may stop text messages at any time by replying <span class="keyword">STOP</span>. For questions about the mobile information covered by this policy, contact the address below.</p>
+
+          <h3>5. Policy updates</h3>
+          <p>This privacy policy may be updated when the service or applicable requirements change. The effective date above identifies the current version.</p>
+
+          <div class="contact">
+            <h3>Contact</h3>
+            <p>Wally Personal Assistant Messaging is operated by Naga Golla. Questions about these terms, privacy, or the messaging program can be sent to <a href="mailto:wally.dk24@gmail.com">wally.dk24@gmail.com</a>.</p>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer>Wally Personal Assistant Messaging</footer>
+  </main>
+
+  <script>
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+      var sections = links.map(function (link) {
+        return document.querySelector(link.getAttribute('href'));
+      });
+
+      function updateNavigation() {
+        var active = 0;
+        sections.forEach(function (section, index) {
+          if (section && section.getBoundingClientRect().top <= 120) active = index;
+        });
+        links.forEach(function (link, index) {
+          if (index === active) link.setAttribute('aria-current', 'true');
+          else link.removeAttribute('aria-current');
+        });
+      }
+
+      window.addEventListener('scroll', updateNavigation, { passive: true });
+      updateNavigation();
+    }());
+  </script>
+</body>
+</html>

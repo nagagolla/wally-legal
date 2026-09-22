@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Privacy Policy and Messaging Terms for the Wally personal assistant messaging service." />
+  <link rel="icon" href="data:," />
+  <title>Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap');
+
+    :root {
+      color-scheme: light dark;
+      --paper: #f4f7f5;
+      --surface: #ffffff;
+      --ink: #17211c;
+      --muted: #526159;
+      --line: #d8e1dc;
+      --accent: #0c6b4d;
+      --accent-soft: #dfeee8;
+      --note: #eff5f2;
+      --shadow: 0 18px 50px rgba(24, 48, 37, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #0f1512;
+        --surface: #151d19;
+        --ink: #ecf3ef;
+        --muted: #a9b8b0;
+        --line: #2c3932;
+        --accent: #66d2a9;
+        --accent-soft: #17392d;
+        --note: #19251f;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 80px;
+    }
+    .intro {
+      max-width: 780px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+    }
+    .date {
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 {
+      font-family: "Libre Caslon Text", serif;
+      color: var(--ink);
+      line-height: 1.18;
+      text-wrap: balance;
+    }
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      font-size: clamp(2.45rem, 7vw, 5rem);
+      letter-spacing: -0.045em;
+    }
+    .lede {
+      max-width: 690px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 2vw, 1.2rem);
+      line-height: 1.65;
+    }
+    .assurance {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: start;
+      max-width: 720px;
+      margin-top: 28px;
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border-radius: 10px;
+      color: var(--ink);
+    }
+    .shield {
+      width: 24px;
+      height: 24px;
+      color: var(--accent);
+      flex: 0 0 auto;
+    }
+    .assurance strong { display: block; margin-bottom: 2px; }
+    .assurance p { margin: 0; color: var(--muted); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 740px);
+      gap: clamp(44px, 8vw, 96px);
+      align-items: start;
+      padding-top: 44px;
+    }
+    .toc {
+      position: sticky;
+      top: 24px;
+      padding: 20px 0;
+    }
+    .toc-title {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .toc a {
+      display: block;
+      padding: 6px 0;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.94rem;
+    }
+    .toc a:hover { color: var(--accent); }
+    .toc .major {
+      margin-top: 10px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    article { min-width: 0; }
+    section {
+      scroll-margin-top: 24px;
+      padding: 0 0 42px;
+    }
+    section + section {
+      padding-top: 42px;
+      border-top: 1px solid var(--line);
+    }
+    .part-label {
+      display: inline-block;
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 0 0 20px;
+      font-size: clamp(1.75rem, 4vw, 2.55rem);
+      letter-spacing: -0.025em;
+    }
+    h3 {
+      margin: 30px 0 8px;
+      font-size: 1.16rem;
+    }
+    p { margin: 0 0 16px; }
+    ul {
+      margin: 12px 0 18px;
+      padding-left: 1.25rem;
+    }
+    li { margin: 8px 0; padding-left: 0.25rem; }
+    li::marker { color: var(--accent); }
+    .plain-summary {
+      margin: 0 0 26px;
+      padding: 20px 22px;
+      background: var(--note);
+      border-radius: 8px;
+      color: var(--muted);
+    }
+    .plain-summary strong { color: var(--ink); }
+    .keyword {
+      display: inline-block;
+      padding: 0 0.35em;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--surface);
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+    .contact {
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    .contact h2 { font-size: 1.55rem; }
+    .contact p:last-child { margin-bottom: 0; }
+    footer {
+      margin-top: 12px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 30px, 680px);
+        padding: 38px 0 56px;
+      }
+      .intro { padding-bottom: 30px; }
+      h1 { font-size: clamp(2.3rem, 12vw, 3.5rem); }
+      .layout { display: block; padding-top: 26px; }
+      .toc {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4px 14px;
+        margin: 0 0 42px;
+        padding: 18px 0 22px;
+        border-bottom: 1px solid var(--line);
+      }
+      .toc-title { grid-column: 1 / -1; }
+      .toc a { padding: 5px 0; }
+      .toc .major { margin-top: 0; }
+      section { padding-bottom: 34px; }
+      section + section { padding-top: 34px; }
+      .contact { padding: 22px 20px; }
+    }
+
+    @media (max-width: 390px) {
+      .toc { grid-template-columns: 1fr; }
+      .assurance { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      :root { --paper: #fff; --surface: #fff; --ink: #111; --muted: #444; --line: #ccc; }
+      .page { width: 100%; padding: 0; }
+      .toc { display: none; }
+      .layout { display: block; padding-top: 28px; }
+      section { break-inside: avoid; }
+      .contact { box-shadow: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="date">Effective September 22, 2026</p>
+      <h1>Your privacy, in plain language.</h1>
+      <p class="lede">This page explains how the Wally personal assistant messaging service, operated by Naga Golla, handles information and the terms that apply when you receive text messages from us.</p>
+      <div class="assurance" aria-label="Mobile privacy assurance">
+        <svg class="shield" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3 5.5 5.7v5.8c0 4.2 2.6 7.7 6.5 9.5 3.9-1.8 6.5-5.3 6.5-9.5V5.7L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p><strong>Your mobile information stays private.</strong> We do not sell, rent, or share mobile numbers or SMS consent data with third parties or affiliates for marketing or promotional purposes.</p>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="toc" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <a class="major" href="#privacy">Privacy Policy</a>
+        <a href="#collect">Information we collect</a>
+        <a href="#use">How we use it</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#retention">Retention &amp; security</a>
+        <a class="major" href="#terms">Messaging Terms</a>
+        <a href="#consent">Consent &amp; frequency</a>
+        <a href="#choices">Your choices</a>
+        <a href="#service">Service terms</a>
+        <a class="major" href="#contact">Contact</a>
+      </nav>
+
+      <article>
+        <section id="privacy">
+          <p class="part-label">Part I</p>
+          <h2>Privacy Policy</h2>
+          <div class="plain-summary"><strong>The short version:</strong> We use only the information needed to deliver personal-assistant reminders, status updates, and requested notifications. We do not use your mobile information for third-party marketing.</div>
+
+          <h3 id="collect">Information we collect</h3>
+          <p>We may collect information you provide directly, including your name, mobile number, message content, communication preferences, and details needed to provide a reminder, update, or notification you requested. We may also receive basic delivery information from our communications provider, such as whether a message was delivered or failed.</p>
+          <p>We do not intentionally collect sensitive information unless you choose to include it in a request. Please avoid sending information that is not needed for the service.</p>
+
+          <h3 id="use">How we use information</h3>
+          <p>We use information to:</p>
+          <ul>
+            <li>send reminders, status updates, service notices, and other messages you request;</li>
+            <li>respond to questions and support requests;</li>
+            <li>honor opt-in and opt-out choices;</li>
+            <li>maintain message delivery, prevent abuse, and meet legal or carrier requirements.</li>
+          </ul>
+          <p>We do not use SMS consent data or mobile numbers for unrelated advertising.</p>
+
+          <h3 id="sharing">How we share information</h3>
+          <p>We do not sell or rent personal information. We do not share mobile numbers, text-message opt-in data, or consent records with third parties or affiliates for marketing or promotional purposes.</p>
+          <p>We may share limited information with service providers that help deliver the requested service, such as telecommunications and messaging providers. They may use that information only to perform services for us and must handle it under their own privacy and security obligations. We may also disclose information when required by law, to protect rights or safety, or in connection with a lawful business transfer.</p>
+          <p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with any third parties, except service providers that enable the messaging service.</strong></p>
+
+          <h3 id="retention">Retention and security</h3>
+          <p>We keep personal information only as long as reasonably needed to provide the service, maintain required consent or opt-out records, resolve disputes, and comply with law. We use reasonable administrative and technical safeguards, but no electronic system can be guaranteed completely secure.</p>
+
+          <h3>Your privacy rights</h3>
+          <p>You may ask to access, correct, or delete personal information we hold about you, subject to legal exceptions. You may also withdraw SMS consent at any time as described below.</p>
+
+          <h3>Children’s privacy</h3>
+          <p>The service is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
+
+          <h3>Policy changes</h3>
+          <p>We may update this policy to reflect changes to the service or legal requirements. The effective date above will be updated when a change takes effect.</p>
+        </section>
+
+        <section id="terms">
+          <p class="part-label">Part II</p>
+          <h2>Messaging Terms &amp; Conditions</h2>
+          <div class="plain-summary"><strong>The short version:</strong> Messages are limited to the personal-assistant updates you agreed to receive. Frequency varies. Standard message and data rates may apply. Reply <span class="keyword">STOP</span> to end messages or <span class="keyword">HELP</span> for help.</div>
+
+          <h3 id="consent">Consent and program description</h3>
+          <p>By providing your mobile number and asking to receive messages, you consent to receive recurring SMS or MMS messages from Wally about requested personal-assistant services, including appointment reminders, status updates, and notifications. Consent may be provided verbally or in writing and is not a condition of purchasing any goods or services.</p>
+
+          <h3>Message frequency and charges</h3>
+          <p><strong>Message frequency varies</strong> based on the reminders, updates, and notifications you request. Message and data rates may apply according to your wireless plan. Carriers are not liable for delayed or undelivered messages.</p>
+
+          <h3 id="choices">Opt out and help</h3>
+          <ul>
+            <li>Reply <span class="keyword">STOP</span> to any message to opt out. You may receive one final confirmation message.</li>
+            <li>Reply <span class="keyword">START</span> to opt back in after opting out.</li>
+            <li>Reply <span class="keyword">HELP</span> for help, or email <a href="mailto:wally.dk24@gmail.com">wally.dk24@gmail.com</a>.</li>
+          </ul>
+          <p>Opt-out requests are honored for the mobile number that sent the request. If your number changes, please contact us so we can update our records.</p>
+
+          <h3 id="service">Service terms</h3>
+          <p>You agree to provide an accurate mobile number that you control and to use the service only for lawful purposes. Do not use the service to send harmful, deceptive, abusive, or unlawful content.</p>
+          <p>The service is provided on an “as available” basis. We may modify, suspend, or discontinue messaging when necessary for security, carrier compliance, legal requirements, or service availability. To the extent permitted by law, the service is provided without warranties, and we are not responsible for indirect or consequential losses arising from message delays, delivery failures, or reliance on a notification.</p>
+
+          <h3>Changes to these terms</h3>
+          <p>We may update these terms as the messaging service or applicable requirements change. Continued use after updated terms take effect means you accept the revised terms. You may opt out at any time by replying <span class="keyword">STOP</span>.</p>
+        </section>
+
+        <section id="contact" class="contact">
+          <p class="part-label">Questions or requests</p>
+          <h2>Contact us</h2>
+          <p>For privacy questions, support, or requests relating to your information, contact:</p>
+          <p><strong>Naga Golla — Wally personal assistant messaging</strong><br />
+          <a href="mailto:wally.dk24@gmail.com">wally.dk24@gmail.com</a></p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <p>Privacy Policy and Messaging Terms · Effective September 22, 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
